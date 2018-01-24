@@ -4,7 +4,7 @@ public abstract class Persona {
 	private boolean genero;
 	private int edad;
 	
-	public IMotriz mov;
+	private IMotriz mov;
 	
 	public Persona(IMotriz mov){
 		this.mov = mov;
@@ -52,5 +52,17 @@ public abstract class Persona {
 	
 	public void brincarSobreUnPie() {
 		System.out.println("Estoy brincando");
+	}
+
+	public String motrizManos(){
+		return this.mov.motrizManos();
+	}
+	
+	public String motrizPies(){
+		return this.mov.motrizPies();
+	}
+	
+	public String motrizNulo(){
+		return this.mov.motrizNulo();
 	}
 }

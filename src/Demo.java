@@ -14,8 +14,9 @@ public class Demo {
 		System.out.println(estudiante.getEdad());
 		System.out.println(estudiante.getGenero());
 		
-		System.out.println(estudiante.mov.motrizManos());
-		System.out.println(estudiante.mov.motrizPies());
+		System.out.println(estudiante.motrizManos());
+		System.out.println(estudiante.motrizPies());
+
 		
 		
 		//HANDICAP - MOV NULO
@@ -31,7 +32,7 @@ public class Demo {
 		System.out.println(handi.getEdad());
 		System.out.println(handi.getGenero());
 		
-		System.out.println(handi.mov.motrizNulo());
+		System.out.println(handi.motrizNulo());
 
 	}
 
