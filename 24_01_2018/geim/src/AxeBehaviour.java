@@ -5,7 +5,7 @@ public class AxeBehaviour implements IWeaponBehaviour{
 	
 	@Override
 	public String useWeapon() {
-		return "lift the axe";
+		return "an axe";
 		
 	}
 	

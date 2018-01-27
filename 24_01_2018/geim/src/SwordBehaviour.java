@@ -5,7 +5,7 @@ public class SwordBehaviour implements IWeaponBehaviour{
 	
 	@Override
 	public String useWeapon() {
-		return "swing the sword";
+		return "a sword";
 		
 	}
 	

@@ -7,6 +7,7 @@ public class Knight extends Character{
 
 	@Override
 	public void fight(){
-		System.out.println("The knight is about to " + getWP().useWeapon());
+		System.out.println("The knight is about to attack with " + getWP().useWeapon());
 	}
 }
+

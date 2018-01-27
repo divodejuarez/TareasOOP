@@ -5,7 +5,7 @@ public class KnifeBehaviour implements IWeaponBehaviour{
 	
 	@Override
 	public String useWeapon() {
-		return "stab";
+		return "a knife";
 		
 	}
 	

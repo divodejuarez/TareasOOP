@@ -5,7 +5,7 @@ public class BowAndArrowBehaviour implements IWeaponBehaviour{
 	
 	@Override
 	public String useWeapon() {
-		return "shoot arrow";
+		return "a bow and arrow";
 		
 	}
 	
