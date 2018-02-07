@@ -1,6 +1,9 @@
+
 public class Demo {
-    public static void main(String[] args){
-        WeatherData wd = new WeatherData();
+    
+	public static void main(String[] args){
+        
+		WeatherData wd = new WeatherData();
         
         new DisplayA(wd, 0);
         new DisplayB(wd, 1);
@@ -8,7 +11,7 @@ public class Demo {
         
         System.out.println("First change");
         wd.setState("Bit of info");
-        System.out.println("First change");
+        System.out.println("Second change");
         wd.setState("Another bit of info");
     }
 }

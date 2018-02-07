@@ -1,3 +1,4 @@
+
 public class DisplayB extends Display{
     
     private int id;
