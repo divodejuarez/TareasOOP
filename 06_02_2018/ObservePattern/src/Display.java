@@ -1,7 +1,13 @@
+import java.util.Observable;
+import java.util.Observer;
 
-public abstract class Display {
+public class Display implements Observer{
+
+	@Override
+	public void update(Observable o, Object arg) {
+		// TODO Auto-generated method stub
+		
+	}
 	
-    public WeatherData w;
-    public abstract void update();
-    public abstract int getID();
+	
 }
