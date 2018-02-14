@@ -33,7 +33,7 @@ public class CorreoMX extends Thread implements IProvider{
 	@Override
 	public void run(){
 		for(int i = 0; i < 10; i++){
-			System.out.println("Update " + i);
+			System.out.println("Update from Correo de MX #" + i);
 			try{
 				sleep((int)(Math.random() * 7000));
 			}catch(Exception e){}
