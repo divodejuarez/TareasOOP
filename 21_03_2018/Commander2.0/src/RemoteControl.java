@@ -5,6 +5,7 @@ import java.util.List;
 public class RemoteControl {
 	Door door = new Door();
 	Blender blender = new Blender();
+	CeilingFan cf = new CeilingFan();
 	
 	private List<Command> undos;
 	private List<Command> commands = new ArrayList<>();
@@ -18,6 +19,8 @@ public class RemoteControl {
 		commands.add(new CloseDoor(door));
 		commands.add(new Blending(blender));
 		commands.add(new Crushing(blender));
+		commands.add(new CeilingCommands(cf));
+		commands.add(new CeilingCommands(cf));
 	}
 	
 	public void pressButton(int c) {
@@ -43,8 +46,31 @@ public class RemoteControl {
 			undos.add(cmd);
 			cmd.execute();
 			break;
+		case 4:
+			cmd = commands.get(c);
+			undos.add(cmd);
+			cmd.execute();
+			break;
+		case 5:
+			cmd = commands.get(c);
+			undos.add(cmd);
+			cmd.undo();
+			break;
+		case 6:
+			int[] arr = new int[3];
+			arr[0] = 0;
+			arr[1] = 2;
+			arr[2] = 3;
+			
+			for(int i : arr) {
+				cmd = commands.get(i);
+				undos.add(cmd);
+				cmd.execute();
+			}
+			break;
 		default:
 			System.out.println("That button does not exists");
+			break;
 		}
 	}
 	
